@@ -14,6 +14,7 @@ class MyServer(BaseHTTPRequestHandler):
 
     def do_GET(self):
         query_components = parse_qs(urlparse(self.path).query)
+        page_adress = query_components.get('page')
         page_content = self.__get_index()
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
