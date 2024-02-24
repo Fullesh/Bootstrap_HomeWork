@@ -268,7 +268,7 @@
 
         <main class="row">
             <div class="row text-center">
-                <div class="col-4">
+                <div class="col-6">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
@@ -281,9 +281,123 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
                         </div>
                     </div>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="NameTitle" class="form-label">Имя</label>
+                            <input type="text" placeholder="Имя" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                            <input type="email" placeholder="E-mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="nameHelp" class="form-text">Мы не передаём данные пользователей.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="title">FAQ</h2>
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#how_to_buy" aria-expanded="false" aria-controls="multiCollapseExample2">Как купить?</button>
+                        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#how_delivery" aria-expanded="false" aria-controls="multiCollapseExample2">Как доставить?</button>
+                        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#guarantees" aria-expanded="false" aria-controls="multiCollapseExample3">Какая гарантия?</button>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="how_to_buy">
+                                <div class="card card-body">
+                                    Для покупки нажмите зелёную кнопку купить в карточке товара.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="how_delivery">
+                                <div class="card card-body">
+                                    После покупки заполните форму на сайте и мы с Вами свяжемся для уточнения условий доставки.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="guarantees">
+                                <div class="card card-body">
+                                    Гарантия на каждый купленный товар составляет 5 лет с момента доставки.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="title">Заказы в реальном времени</h2>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Номер заказа</th>
+                            <th scope="col">Название товара</th>
+                            <th scope="col">Цена за штуку</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Итоговая сумма</th>
+                            <th scope="col">Статус заказа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Ноутбук</td>
+                            <td>50.000 руб.</td>
+                            <td>10 шт.</td>
+                            <td>500.000 руб.</td>
+                            <td>
+                                <div class="alert alert-success" role="alert">
+                                    Обработан
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Планшет</td>
+                            <td>35.000 руб.</td>
+                            <td>5 шт.</td>
+                            <td>175.000 руб.</td>
+                            <td>
+                                <div class="alert alert-danger" role="alert">
+                                    Отменен
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Сервер</td>
+                            <td>110.000 руб.</td>
+                            <td>2 шт.</td>
+                            <td>220.000 руб.</td>
+                            <td>
+                                <div class="alert alert-warning" role="alert">
+                                    Обработка
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>RAID-оборудование</td>
+                            <td>10.000 руб.</td>
+                            <td>15 шт.</td>
+                            <td>150.000 руб.</td>
+                            <td>
+                                <div class="alert alert-primary" role="alert">
+                                    Новый
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
